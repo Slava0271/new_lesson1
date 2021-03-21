@@ -7,12 +7,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.calc.R
+import kotlinx.android.synthetic.main.tags_item.view.*
 
-class TagsAdapter( private val cats: ArrayList<Cat>) : RecyclerView.Adapter<TagsAdapter.MyViewHolder>() {
+class TagsAdapter(private val cats: ArrayList<Cat>) : RecyclerView.Adapter<TagsAdapter.MyViewHolder>() {
 
     inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val tagTV: TextView = view.findViewById<View>(R.id.tagTV) as TextView
-        val imageCats: ImageView = view.findViewById(R.id.image_cats)
+        val tagTV: TextView = view.tagTV as TextView
+        val imageCats: ImageView = view.image_cats
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -22,11 +23,10 @@ class TagsAdapter( private val cats: ArrayList<Cat>) : RecyclerView.Adapter<Tags
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val tag = cats[position]
-        val imgRes = cats[position]
+        val cat = cats[position]
 
-        holder.tagTV.text = tag.des
-        holder.imageCats.setImageBitmap(imgRes.catImg)
+        holder.tagTV.text = cat.catDescription
+        holder.imageCats.setImageBitmap(cat.catImg)
 
     }
 

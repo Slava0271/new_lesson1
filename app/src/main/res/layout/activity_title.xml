@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
     tools:context=".part4_title.TitleActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,7 +14,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:background="@color/background_titles"
+        android:background="@drawable/corners"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/title1"
@@ -21,8 +22,8 @@
 
         <ImageView
             android:id="@+id/imageViewTitle2"
-            android:layout_width="63dp"
-            android:layout_height="67dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:hapticFeedbackEnabled="false"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -78,20 +79,22 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/background_titles"
+        android:hapticFeedbackEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+        tools:srcCompat="@drawable/camera" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/title1"
         android:layout_width="0dp"
         android:layout_height="0dp"
+
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
-        android:background="@color/background_titles"
+        android:background="@drawable/corners"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/title2"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,8 +102,8 @@
 
         <ImageView
             android:id="@+id/imageViewTitle1"
-            android:layout_width="63dp"
-            android:layout_height="67dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:hapticFeedbackEnabled="false"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -126,7 +129,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/background_titles"
+        android:background="@drawable/corners"
         app:layout_constraintBottom_toTopOf="@+id/title4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,8 +137,8 @@
 
         <ImageView
             android:id="@+id/imageViewTitle3"
-            android:layout_width="63dp"
-            android:layout_height="67dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:hapticFeedbackEnabled="false"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -160,7 +163,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/background_titles"
+        android:background="@drawable/corners"
         app:layout_constraintBottom_toTopOf="@+id/title5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -195,7 +198,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/background_titles"
+        android:background="@drawable/corners"
         app:layout_constraintBottom_toTopOf="@+id/title6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -231,7 +234,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/background_titles"
+        android:background="@drawable/corners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -241,7 +244,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:text="@string/title5"
+            android:text="@string/title6"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -257,7 +260,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/background_titles"
+        android:background="@drawable/corners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/title6">
@@ -274,10 +277,10 @@
         <TextView
             android:id="@+id/title7Text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="5dp"
-            android:text="@string/title4"
+            android:text="@string/title7"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintStart_toEndOf="@+id/imageViewTitle7"

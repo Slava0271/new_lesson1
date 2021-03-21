@@ -5,13 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CatBreed">
+    tools:context=".part5_cats_breed.CatBreed">
 
     <Button
         android:id="@+id/buttonSetActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/_2_columns" />
+        android:insetLeft="30dp"
+        android:insetTop="10dp"
+        android:insetRight="30dp"
+        android:text="@string/column2" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/tagsRV"

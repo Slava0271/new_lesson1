@@ -4,7 +4,6 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,30 +31,29 @@ class CatBreed : AppCompatActivity() {
 
         buttonSetActivity.setOnClickListener {
             if (!isGridLayout) {
-               isGridLayout= toOneColumn(isGridLayout)
-            }else if(isGridLayout){
-               isGridLayout= toTwoColumns(isGridLayout)
+                isGridLayout = toOneColumn(isGridLayout)
+            } else if (isGridLayout) {
+                isGridLayout = toTwoColumns(isGridLayout)
             }
         }
 
     }
 
-    private  fun toOneColumn(isGridLayout:Boolean):Boolean{
+    private fun toOneColumn(isGridLayout: Boolean): Boolean {
         tagsRV.layoutManager = GridLayoutManager(this, 2)
-        buttonSetActivity.text=getString(R.string._1_column)
+        buttonSetActivity.text = getString(R.string.column1)
         return !isGridLayout
     }
 
-    private fun toTwoColumns(isGridLayout: Boolean):Boolean{
+    private fun toTwoColumns(isGridLayout: Boolean): Boolean {
         tagsRV.layoutManager = LinearLayoutManager(this)
-        buttonSetActivity.text=getString(R.string._2_columns)
+        buttonSetActivity.text = getString(R.string.column2)
         return !isGridLayout
 
     }
 
 
-
-    private fun addAllBreeds( cats: ArrayList<Cat>) {
+    private fun addAllBreeds(cats: ArrayList<Cat>) {
         val amerCatDescription = assets.open("amer_cat_description.txt").bufferedReader().use {
             it.readText()
         }
@@ -69,15 +67,15 @@ class CatBreed : AppCompatActivity() {
             it.readText()
         }
 
-        Cat(assetsBitmap("amer_cat.jpg"),amerCatDescription).let { cats.add(it) }
-        Cat(assetsBitmap("british_cat.jpg"),britishCatDescription).let { cats.add(it) }
-        Cat(assetsBitmap("pers_cat.jpg"),persCatDescription).let { cats.add(it) }
-        Cat(assetsBitmap("savana_cat.jpg"),savanaCatDescription).let { cats.add(it) }
+        Cat(getAssetsBitmap("amer_cat.jpg"), amerCatDescription).let { cats.add(it) }
+        Cat(getAssetsBitmap("british_cat.jpg"), britishCatDescription).let { cats.add(it) }
+        Cat(getAssetsBitmap("pers_cat.jpg"), persCatDescription).let { cats.add(it) }
+        Cat(getAssetsBitmap("savana_cat.jpg"), savanaCatDescription).let { cats.add(it) }
 
     }
 
 
-    private fun Context.assetsBitmap(path: String): Bitmap {
+    private fun Context.getAssetsBitmap(path: String): Bitmap {
         val inputStream: InputStream
         var bitmap: Bitmap? = null
         try {
