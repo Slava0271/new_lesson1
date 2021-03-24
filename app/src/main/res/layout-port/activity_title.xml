@@ -12,6 +12,7 @@
         android:id="@+id/title2"
         android:layout_width="0dp"
         android:layout_height="0dp"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
@@ -23,6 +24,18 @@
 
         <ImageView
             android:id="@+id/imageViewTitle2"
+=======
+        app:layout_constraintWidth_percent="0.24"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corners"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewTitle1"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:hapticFeedbackEnabled="false"
@@ -36,8 +49,13 @@
             android:layout_height="wrap_content"
             app:autoSizeTextType="uniform"
             app:autoSizePresetSizes="@array/autosize_text_sizes"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
             android:layout_marginStart="13dp"
             android:text="@string/title_2"
+=======
+            android:layout_marginStart="16dp"
+            android:text="@string/title_1"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
             android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -97,6 +115,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/corners"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@+id/title2"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,6 +123,15 @@
 
         <ImageView
             android:id="@+id/imageViewTitle1"
+=======
+        app:layout_constraintEnd_toStartOf="@+id/textViewResult"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.24">
+
+        <ImageView
+            android:id="@+id/imageViewTitle2"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:hapticFeedbackEnabled="false"
@@ -115,10 +143,17 @@
             android:id="@+id/title1Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
             android:layout_marginStart="13dp"
             app:autoSizeTextType="uniform"
             app:autoSizePresetSizes="@array/autosize_text_sizes"
             android:text="@string/title_1"
+=======
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_2"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
             android:textColor="@color/white"
             android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -130,12 +165,19 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/corners"
         app:layout_constraintBottom_toTopOf="@+id/title4"
         app:layout_constraintEnd_toEndOf="parent"
+=======
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/corners"
+        app:layout_constraintBottom_toBottomOf="parent"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title2">
 
@@ -152,9 +194,15 @@
             android:id="@+id/title3Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
             android:layout_marginStart="13dp"
             app:autoSizeTextType="uniform"
             app:autoSizePresetSizes="@array/autosize_text_sizes"
+=======
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            android:layout_marginStart="16dp"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
             android:text="@string/title_3"
             android:textColor="@color/white"
             android:textSize="30sp"
@@ -168,9 +216,13 @@
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
         android:layout_marginBottom="20dp"
         android:background="@drawable/corners"
         app:layout_constraintBottom_toTopOf="@+id/title5"
+=======
+        android:background="@drawable/corners"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -186,12 +238,19 @@
         <TextView
             android:id="@+id/title4Text"
             android:layout_width="wrap_content"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
             android:layout_height="30dp"
             app:autoSizeTextType="uniform"
             app:autoSizePresetSizes="@array/autosize_text_sizes"
             android:layout_marginStart="12dp"
+=======
+            android:layout_height="wrap_content"
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            android:layout_marginStart="10dp"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
             android:layout_marginTop="5dp"
-            android:text="@string/title4"
+            android:text="@string/title6"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintStart_toEndOf="@+id/imageViewTitle4"
@@ -204,9 +263,14 @@
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
         android:layout_marginBottom="20dp"
         android:background="@drawable/corners"
         app:layout_constraintBottom_toTopOf="@+id/title6"
+=======
+        android:background="@drawable/corners"
+        app:layout_constraintBottom_toBottomOf="@+id/title3"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
@@ -228,7 +292,7 @@
             app:autoSizePresetSizes="@array/autosize_text_sizes"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:text="@string/title5"
+            android:text="@string/title7"
             android:textColor="@color/white"
             android:textSize="25sp"
             app:layout_constraintStart_toEndOf="@+id/imageViewTitle5"
@@ -239,11 +303,18 @@
         android:id="@+id/title6"
         android:layout_width="90dp"
         android:layout_height="50dp"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/corners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
+=======
+        app:layout_constraintWidth_percent="0.15"
+        android:background="@drawable/corners"
+        app:layout_constraintBottom_toBottomOf="@+id/title2"
+        app:layout_constraintEnd_toEndOf="@+id/title4">
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
 
         <TextView
             android:id="@+id/title6Text"
@@ -260,10 +331,58 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
+=======
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewResult"
+        app:layout_constraintStart_toEndOf="@+id/textViewResult"
+        app:layout_constraintTop_toTopOf="@+id/textViewResult"
+        app:srcCompat="@drawable/vector_notif" />
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/title6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        tools:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/hello_username"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="162dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/_1000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/title7"
+        app:layout_constraintStart_toStartOf="@+id/title7" />
+
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/title7"
         android:layout_width="0dp"
         android:layout_height="50dp"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
@@ -271,6 +390,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/title6">
+=======
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/corners"
+        app:layout_constraintBottom_toBottomOf="@+id/title2"
+        app:layout_constraintEnd_toStartOf="@+id/title6"
+        app:layout_constraintStart_toStartOf="@+id/title4">
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
 
         <ImageView
             android:id="@+id/imageViewTitle7"
@@ -284,10 +410,17 @@
         <TextView
             android:id="@+id/title7Text"
             android:layout_width="wrap_content"
+<<<<<<< HEAD:app/src/main/res/layout-port/activity_title.xml
             android:layout_height="0dp"
             app:autoSizeTextType="uniform"
             app:autoSizePresetSizes="@array/autosize_text_sizes"
             android:layout_marginStart="16dp"
+=======
+            android:layout_height="wrap_content"
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            android:layout_marginStart="10dp"
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de:app/src/main/res/layout-land/activity_title.xml
             android:layout_marginTop="5dp"
             android:text="@string/title4"
             android:textColor="@color/white"
