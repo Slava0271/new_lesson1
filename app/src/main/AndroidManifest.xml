@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calc">
+        <activity android:name=".part6_tab_with_rv.Matches" />
         <activity android:name=".part5_cats_breed.CatBreed" />
         <activity android:name=".part3_images.ChangeColorActivity" />
         <activity android:name=".part4_title.TitleActivity" />

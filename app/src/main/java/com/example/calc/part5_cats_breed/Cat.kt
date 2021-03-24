@@ -5,5 +5,5 @@ import android.graphics.Bitmap
 
 class Cat (catImage:Bitmap,description: String) {
     val catImg=catImage
-    val des= description
+    val catDescription= description
 }

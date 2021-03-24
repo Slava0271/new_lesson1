@@ -39,9 +39,12 @@
     <string name="titles">Titles</string>
     <string name="change_image_color">Change image color</string>
     <string name="cats_breed">Cats Breed</string>
-    <string name="_2_columns">2 Columns</string>
-    <string name="_1_column">1 Column</string>
+    <string name="column2">2 Columns</string>
+    <string name="column1">1 Column</string>
     <string name="title5">Title5</string>
+    <string name="_1000">$1000</string>
+    <string name="title7">Title 7</string>
+    <string name="matches">matches</string>
 
 
     <string-array name="transformation">
@@ -52,8 +55,5 @@
         <item>Circle Transformation</item>
     </string-array>
 
-    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
-        <item name="cornerSize">50%</item>
-    </style>
 
 </resources>
