@@ -7,11 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.calc.R
-<<<<<<< HEAD
 import kotlinx.android.synthetic.main.cat_items.view.*
-=======
-import kotlinx.android.synthetic.main.tags_item.view.*
->>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de
 
 class TagsAdapter(private val cats: ArrayList<Cat>) : RecyclerView.Adapter<TagsAdapter.MyViewHolder>() {
 
