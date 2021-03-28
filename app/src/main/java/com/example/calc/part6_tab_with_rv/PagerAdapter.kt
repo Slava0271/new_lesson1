@@ -1,12 +1,12 @@
 package com.example.calc.part6_tab_with_rv
 
-import com.example.calc.R
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.calc.R
 import kotlinx.android.synthetic.main.layout.view.*
 
 class PagerAdapter(private val context: Context) :

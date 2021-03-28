@@ -109,7 +109,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/changeImageColorButton" />
-<<<<<<< HEAD
 
             <Button
                 android:id="@+id/matches_activity"
@@ -123,9 +122,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cats_breed" />
-=======
->>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

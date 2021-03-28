@@ -40,21 +40,13 @@ class CatBreed : AppCompatActivity() {
     }
 
     private fun toOneColumn(isGridLayout: Boolean): Boolean {
-<<<<<<< HEAD
         recyclerView.layoutManager = GridLayoutManager(this, 2)
-=======
-        tagsRV.layoutManager = GridLayoutManager(this, 2)
->>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de
         buttonSetActivity.text = getString(R.string.column1)
         return !isGridLayout
     }
 
     private fun toTwoColumns(isGridLayout: Boolean): Boolean {
-<<<<<<< HEAD
         recyclerView.layoutManager = LinearLayoutManager(this)
-=======
-        tagsRV.layoutManager = LinearLayoutManager(this)
->>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de
         buttonSetActivity.text = getString(R.string.column2)
         return !isGridLayout
 
