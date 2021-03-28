@@ -9,6 +9,7 @@ import com.example.calc.part3_images.ChangeColorActivity
 import com.example.calc.part3_images.ImageViewActivity
 import com.example.calc.part4_title.TitleActivity
 import com.example.calc.part5_cats_breed.CatBreed
+import com.example.calc.part6_tab_with_rv.Matches
 import com.example.calc.part8_change_color.ChangeActivityColors
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -33,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         cats_breed.setOnClickListener {
             toCatBreeds()
         }
+        matches_activity.setOnClickListener(){
+            toMatches()
+        }
 
     }
 
@@ -55,6 +59,9 @@ class MainActivity : AppCompatActivity() {
     }
     private fun toCatBreeds(){
         startActivity(Intent(this, CatBreed::class.java))
+    }
+    private fun toMatches(){
+        startActivity(Intent(this,Matches::class.java))
     }
 
 }

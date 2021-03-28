@@ -34,11 +34,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
-        tools:layout_editor_absoluteX="-52dp">
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -47,52 +48,85 @@
                 android:id="@+id/calculator"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
                 android:insetLeft="20dp"
                 android:insetTop="50dp"
                 android:insetRight="20dp"
                 android:text="@string/calculator"
-                app:backgroundTint="@color/button_color" />
+                app:backgroundTint="@color/button_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/images"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:insetLeft="20dp"
-                android:insetTop="100dp"
+                android:insetTop="50dp"
                 android:insetRight="20dp"
                 android:text="@string/images"
-                app:backgroundTint="@color/button_color" />
+                app:backgroundTint="@color/button_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calculator" />
 
             <Button
                 android:id="@+id/titleActivity"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:insetLeft="20dp"
-                android:insetTop="100dp"
+                android:insetTop="50dp"
                 android:insetRight="20dp"
                 android:text="@string/titles"
-                app:backgroundTint="@color/button_color" />
+                app:backgroundTint="@color/button_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/images" />
 
             <Button
                 android:id="@+id/changeImageColorButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:insetLeft="20dp"
-                android:insetTop="100dp"
+                android:insetTop="50dp"
                 android:insetRight="20dp"
                 android:text="@string/change_image_color"
-                app:backgroundTint="@color/button_color" />
+                app:backgroundTint="@color/button_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleActivity" />
+
             <Button
                 android:id="@+id/cats_breed"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:insetLeft="20dp"
-                android:insetTop="100dp"
+                android:insetTop="50dp"
                 android:insetRight="20dp"
                 android:text="@string/cats_breed"
-                app:backgroundTint="@color/button_color" />
+                app:backgroundTint="@color/button_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/changeImageColorButton" />
+<<<<<<< HEAD
+
+            <Button
+                android:id="@+id/matches_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:insetLeft="20dp"
+                android:insetTop="50dp"
+                android:insetRight="20dp"
+                android:text="@string/matches"
+                app:backgroundTint="@color/button_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cats_breed" />
+=======
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de
 
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

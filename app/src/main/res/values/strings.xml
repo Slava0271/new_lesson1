@@ -34,14 +34,23 @@
     <string name="title_2">Title 2</string>
     <string name="hello_username"><![CDATA[Hello, <UserName>]]></string>
     <string name="title_3">   Title 3</string>
-    <string name="title4">Title4</string>
-    <string name="title6">Title6</string>
+    <string name="title4">Title 4</string>
+    <string name="title6">Title 6</string>
     <string name="titles">Titles</string>
     <string name="change_image_color">Change image color</string>
     <string name="cats_breed">Cats Breed</string>
-    <string name="_2_columns">2 Columns</string>
-    <string name="_1_column">1 Column</string>
+    <string name="column2">2 Columns</string>
+    <string name="column1">1 Column</string>
+<<<<<<< HEAD
     <string name="title5">Title5</string>
+    <string name="_1000">$1000</string>
+    <string name="title7">Title 7</string>
+    <string name="matches">matches</string>
+=======
+    <string name="title5">Title 5</string>
+    <string name="_1000">$1000</string>
+    <string name="title7">Title 7</string>
+>>>>>>> d9002ebbcf5d3537f5a2c2c3cb792ed1f41ab8de
 
 
     <string-array name="transformation">
@@ -52,8 +61,5 @@
         <item>Circle Transformation</item>
     </string-array>
 
-    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
-        <item name="cornerSize">50%</item>
-    </style>
 
 </resources>
